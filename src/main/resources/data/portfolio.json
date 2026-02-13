@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "title": "환상의 숲",
+    "category": "illustration",
+    "thumbnailUrl": "/images/환상의숲-thumb.jpg",
+    "images": ["/images/환상의숲-1.jpg", "/images/환상의숲-2.jpg"],
+    "description": "몽환적인 숲 속 풍경을 담은 일러스트 작품입니다.",
+    "client": "개인 작업",
+    "duration": "2024.01"
+  },
+  {
+    "id": 2,
+    "title": "도시의 밤",
+    "category": "illustration",
+    "thumbnailUrl": "/images/도시의밤-thumb.jpg",
+    "images": ["/images/도시의밤-1.jpg", "/images/도시의밤-2.jpg", "/images/도시의밤-3.jpg"],
+    "description": "네온 불빛이 반짝이는 야경 일러스트.",
+    "client": "A사",
+    "duration": "2024.03"
+  },
+  {
+    "id": 3,
+    "title": "캐릭터 워크플로우",
+    "category": "animation",
+    "thumbnailUrl": "/images/캐릭터워크플로우-thumb.jpg",
+    "images": ["/images/캐릭터워크플로우-1.jpg", "/images/캐릭터워크플로우-2.jpg"],
+    "description": "2D 캐릭터 애니메이션 연출 및 모션 작업.",
+    "client": "B 스튜디오",
+    "duration": "2024.02"
+  },
+  {
+    "id": 4,
+    "title": "브랜드 오프닝",
+    "category": "animation",
+    "thumbnailUrl": "/images/브랜드오프닝-thumb.jpg",
+    "images": ["/images/브랜드오프닝-1.jpg", "/images/브랜드오프닝-2.jpg", "/images/브랜드오프닝-3.jpg"],
+    "description": "브랜드 영상용 15초 오프닝 애니메이션.",
+    "duration": "2024.04"
+  },
+  {
+    "id": 5,
+    "title": "앱 UI 키비주얼",
+    "category": "design",
+    "thumbnailUrl": "/images/앱UI키비주얼-thumb.jpg",
+    "images": ["/images/앱UI키비주얼-1.jpg", "/images/앱UI키비주얼-2.jpg"],
+    "description": "모바일 앱 메인 화면 및 키비주얼 디자인.",
+    "client": "C 주식회사",
+    "duration": "2024.05"
+  }
+]

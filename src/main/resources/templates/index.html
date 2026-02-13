@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <!-- 상단 헤더 (고정) -->
+    <header class="header">
+        <a href="/" class="logo">Portfolio</a>
+        <nav>
+            <a href="/about" class="nav-link">Info</a>
+        </nav>
+    </header>
+
+    <!-- 중앙 히어로 영역 (풀스크린) -->
+    <main class="hero">
+        <div class="hero-image"></div>
+    </main>
+
+    <!-- 하단 푸터 (고정) -->
+    <footer class="footer">
+        <nav class="footer-nav">
+            <a href="/gallery?category=illustration" class="footer-link">illustrate</a>
+            <a href="/gallery?category=animation" class="footer-link">animation</a>
+            <a href="/gallery?category=design" class="footer-link">design</a>
+            <span class="footer-link disabled">SNS</span>
+        </nav>
+    </footer>
+</body>
+</html>

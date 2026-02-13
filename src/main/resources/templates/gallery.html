@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Portfolio</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body class="gallery-page">
+    <!-- 상단 메뉴 (sticky) -->
+    <header class="gallery-header">
+        <a href="/" class="logo">Portfolio</a>
+        <nav class="gallery-nav">
+            <a th:href="@{/gallery(category='illustration')}"
+               th:classappend="${currentCategory == 'illustration' ? 'active' : ''}"
+               class="gallery-nav-link">illustrate</a>
+            <a th:href="@{/gallery(category='animation')}"
+               th:classappend="${currentCategory == 'animation' ? 'active' : ''}"
+               class="gallery-nav-link">animation</a>
+            <a th:href="@{/gallery(category='design')}"
+               th:classappend="${currentCategory == 'design' ? 'active' : ''}"
+               class="gallery-nav-link">design</a>
+            <span class="gallery-nav-link disabled">SNS</span>
+        </nav>
+    </header>
+
+    <!-- 본문: 작품 그리드 -->
+    <main class="gallery-main">
+        <div class="gallery-grid">
+            <a th:each="work : ${works}"
+               th:href="@{/detail(id=${work.id})}"
+               class="gallery-card">
+                <div class="gallery-card-image-wrap">
+                    <img th:src="${work.thumbnailUrl}"
+                         th:alt="${work.title}"
+                         class="gallery-card-image"
+                         onerror="this.onerror=null; this.src='https://placehold.co/400x400/f5f3ef/e8e6e1?text=No+Image';">
+                </div>
+                <h3 class="gallery-card-title" th:text="${work.title}">제목</h3>
+            </a>
+        </div>
+    </main>
+</body>
+</html>
