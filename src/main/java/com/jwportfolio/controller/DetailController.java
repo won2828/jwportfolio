@@ -21,7 +21,7 @@ public class DetailController {
 
     @GetMapping
     public String detail(
-            @RequestParam Long id,
+            @RequestParam("id") Long id,
             Model model,
             RedirectAttributes redirectAttributes
     ) {

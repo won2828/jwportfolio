@@ -20,7 +20,7 @@ public class GalleryController {
 
     @GetMapping
     public String gallery(
-            @RequestParam(required = false) String category,
+            @RequestParam(value = "category", required = false) String category,
             Model model
     ) {
         List<Portfolio> works = category != null && !category.isBlank()
